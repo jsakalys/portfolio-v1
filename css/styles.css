@@ -12,6 +12,14 @@ h1 {
   border-radius: 0 !important;
 }
 
+.sample .front {
+	background-color: blue;
+}
+
+.sample .back {
+	background-color: teal;
+}
+
 /* Common style for pseudo-elements */
 section::before,
 section::after {
@@ -186,6 +194,12 @@ legend {
 .footer {
 	height: 100px;
 	background-color: silver;
+}
+
+/* Mix it up */
+
+#Container .mix{
+	display: none;
 }
 
 /* Typed JS cursor */

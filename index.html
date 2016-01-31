@@ -4,7 +4,14 @@
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Julie Sakalys. Full Stack Developer.</title>
+		<title>Julie Sakalys</title>
+		<!-- Angular JS -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.8/angular.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.8/angular-route.js"></script>
+		<!-- Angular App -->
+		<script src="js/app.js"></script>
+		<script src="js/controllers.js"></script>
+		<script src="js/directives.js"></script>
 		<!-- Bootstrap CSS -->
 		<link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
 		<!-- Google Fonts -->
@@ -23,114 +30,26 @@
 			<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
 		<![endif]-->
 	</head>
-	<body>
+	<body ng-app="jsApp">
 		<div class="row">
 			<div class="col-xs-10 col-xs-offset-1 col-sm-10 col-sm-offset-1">
-				<nav class="navbar navbar-transparent" role="navigation">
-					<!-- Brand and toggle get grouped for better mobile display -->
-					<div class="navbar-header">
-						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-							<span class="sr-only">Toggle navigation</span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-						</button>
-						<a id="my-name" class="navbar-brand" href="/">js.</a>
-					</div>
-					<!-- Collect the nav links, forms, and other content for toggling -->
-					<div class="collapse navbar-collapse navbar-ex1-collapse">
-						<ul class="nav navbar-nav navbar-right">
-							<li class="about-link"><a href="about.html">About</a></li>
-							<li class="work-link"><a href="portfolio.html">Portfolio</a></li>
-							<li class="contact-link"><a href="contact.html">Contact</a></li>
-						</ul>
-					</div><!-- /.navbar-collapse -->
-				</nav>
-				<div class="row">
-					<div id="tag-line" class="col-sm-12">
-						<div class="tag-line">
-							<div id="typed-strings">
-							    <p>
-							    	Hello,^1000 my name is <span class="julie">Julie &#9825</span><br>
-							    	^1000I'm a Full Stack Developer based in <span class='seattle'>Seattle</span>
-							    </p>
-							</div>
-							<span id="typed"></span>
-						</div>
-						<button class="btn">Learn More</button>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-sm-4 block">
-						Compactia
-					</div>
-					<div class="col-sm-4 block">
-					Explor
-					</div>
-					<div class="col-sm-4 block">
-						<div class="icon icon-basic-elaboration-document-download"></div>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-sm-4 social-container">
-						<div class="row">
-							<div class="social-block col-xs-6">
-								linkedin
-							</div>
-							<div class="social-block col-xs-6">
-								twitter
-							</div>
-						</div>
-						<div class="row">
-							<div class="social-block col-xs-6">
-								linkedin
-							</div>
-							<div class="social-block col-xs-6">
-								twitter
-							</div>
-						</div>
-					</div>
-					<div class="col-sm-8 block">
-					recommendations tabs
-					</div>
-				</div>
-				<div class="row social-container">
-					<div class="col-sm-4 block">
-					contact
-					</div>
-					<div class="col-sm-4 social-container">
-						<div class="row">
-							<div class="col-sm-12 social-block">
-							sublime theme
-							</div>
-						</div>
-					</div>
-				</div>
+				<navbar></navbar>
+				<ng-view></ng-view>
 			</div>
 		</div>
-		<div class="row footer col-sm-12 social-container">
-			<svg id="bigTriangleShadow" xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100" viewBox="0 0 100 100" preserveAspectRatio="none" style="display: block">
-				<path id="trianglePath1" d="M0 0 L50 100 L100 0 Z"></path>
-				<path id="trianglePath2" d="M50 100 L100 40 L100 0 Z"></path>
-			</svg>
-		</div>
-		<footer>
-			<div class="col-sm-12 text-right">
-			Copyright &copy; 2016 Julie Sakalys
-			</div>
-		</footer>
+		<footerbar></footerbar>
 			
 		<!-- jQuery -->
-		<script  type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+		<script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
 		<!-- Bootstrap JavaScript -->
-		<script  type="text/javascript" src="https://netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-		<!-- Typed JS -->
-		<script  type="text/javascript" src="js/typed.min.js"></script>
-		<!-- Lettering JS -->s
-		<script  type="text/javascript" src="js/jquery.lettering.min.js"></script>
+		<script type="text/javascript" src="https://netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 		<!-- Mixitup JS -->
-		<script  type="text/javascript" src="js/jquery.mixitup.min.js"></script>
-		<!-- My Script -->
-		<script  type="text/javascript" src="js/script.js"></script>
+		<script type="text/javascript" src="js/plugins/mixitup.min.js"></script>
+		<!-- Lettering JS -->
+		<script type="text/javascript" src="js/plugins/lettering.min.js"></script>
+		<!-- Typed JS -->
+		<script type="text/javascript" src="js/plugins/typed.min.js"></script>
+		<!-- TurnBox JS -->
+		<script type="text/javascript" src="js/plugins/turnbox.js"></script>
 	</body>
 </html>
