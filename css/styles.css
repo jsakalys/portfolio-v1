@@ -1,0 +1,213 @@
+body {
+	background-color: silver;
+	font-family: 'Istok Web', sans-serif;
+}
+
+h1 {
+	color: white;
+	font-family: 'Droid Serif', serif;
+}
+
+* {
+  border-radius: 0 !important;
+}
+
+/* Common style for pseudo-elements */
+section::before,
+section::after {
+	position: absolute;
+	content: '';
+	pointer-events: none;
+}
+/* Big triangle with shadow */
+
+#trianglePath1 {
+	fill: #ccc;
+	stroke: #ccc;
+} 
+
+#trianglePath2 {
+	fill: darkGray;
+	stroke: darkGray;
+}
+
+/* Bootstrap row fix */
+
+.row {
+	margin: 0;
+	background-color: #ccc;
+}
+
+/* Navbar & navigation */
+
+nav {
+	padding-top: 30px;
+}
+.nav {
+	margin-bottom: 45px;
+}
+
+.navbar-brand {
+	font-family: 'Droid Serif', serif;
+	color: white;
+	padding: 9px;
+	font-size: 32px;
+	line-height: 32px;
+}
+
+#my-name .char1 {
+	color: #fff;
+}
+
+#my-name .char2 {
+	color: #fff;
+}
+
+#my-name .char3 {
+	color: #AFFED7;
+	font-weight: bold;
+}
+
+.navbar li {
+	text-transform: uppercase;
+	font-family: 'Istok Web', sans-serif;
+	letter-spacing: 2px;
+	font-size: 12px;
+	text-align: center;
+}
+
+.navbar li a {
+	color: black;
+	transition: background-color 200ms linear;
+}
+
+/* Show hamburger icon on smaller devices */
+
+.icon-bar {
+	border: solid 1px #fff;
+}
+
+/* Change navbar item background on hover */
+
+.navbar li.about-link a:hover {
+	background-color: #FFF4B6;
+	color: black;
+}
+
+.navbar li.work-link a:hover {
+	background-color: #E80C7A;
+	color: white;
+}
+
+.navbar li.contact-link a:hover {
+	background-color: #AFFED7;
+	color: navy;
+}
+
+/* grid */
+.block {
+	height: 250px;
+	background-color: pink;
+	border: solid 5px #ccc;
+	text-align: center;
+	line-height: 250px;
+	vertical-align: middle;
+	animation-duration: 500ms;
+  	animation-delay: 500ms;
+}
+
+.social-block {
+	height: 125px;
+	margin: 0;
+	background-color: pink;
+	border: solid 5px #ccc;
+	animation-duration: 500ms;
+  	animation-delay: 500ms;
+}
+
+.social-container {
+	padding: 0;
+}
+
+.icon {
+	font-size: 80%;
+}
+
+/* Blocks */
+
+#tag-line {
+	padding: 5px;
+	background-color: transparent;
+	color: white;
+	line-height: inherit;
+	font-size: 48px;
+	text-align: left;
+	font-family: 'Droid Serif', serif;
+	min-height: 250px;
+}
+
+.hello {
+	color: white;
+}
+
+.julie {
+	color: lightPink;
+}
+
+.seattle {
+	color: #FFF4B6;
+}
+
+
+footer {
+	height: 150px;
+	line-height: 50px;
+	font-size: 12px;
+	background-color: silver;
+	color: #f1f1f1;
+}
+
+.divider {
+	padding: 5px;
+}
+
+legend {
+	color: white;
+	font-family: 'Droid Serif', serif;
+}
+
+.btn {
+	font-family: 'Istok Web', sans-serif;
+	letter-spacing: 1px;
+	border-bottom: solid 1px darkGray;
+	font-size: 14px;
+}
+
+.footer {
+	height: 100px;
+	background-color: silver;
+}
+
+/* Typed JS cursor */
+
+.typed-cursor{
+    opacity: 1;
+    -webkit-animation: blink 1s infinite;
+    -moz-animation: blink 1s infinite;
+    animation: blink 1s infinite;
+}
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
