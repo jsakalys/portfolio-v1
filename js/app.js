@@ -20,5 +20,4 @@ jsApp.config(['$routeProvider', '$locationProvider', function($routeProvider, $l
 
   $locationProvider.html5Mode(false).hashPrefix('!');
 
-  $locationProvider.html5Mode(false).hashPrefix('!');
 }]);

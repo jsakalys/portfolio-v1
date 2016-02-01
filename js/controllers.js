@@ -1,7 +1,7 @@
 jsApp.controller('HomeCtrl', function(){
 	var turnBoxOptions = {
 	  width: $('this').width(),
-	  height: 200,
+	  height: 250,
 	  axis: "X",
 	  perspective: 800,
 	  duration: 200,
@@ -11,7 +11,7 @@ jsApp.controller('HomeCtrl', function(){
 	  type: "real"
 	};
 	$(document).ready(function(){
-		$('.sample').turnBox(turnBoxOptions);
+		$('.turnBlock').turnBox(turnBoxOptions);
 		$('#my-name').lettering();
 		$('#my-name').addClass('animated rollIn');
 		$('.nav').addClass('animated slideInDown');

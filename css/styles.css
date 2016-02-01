@@ -1,3 +1,5 @@
+/* General */
+
 body {
 	background-color: silver;
 	font-family: 'Istok Web', sans-serif;
@@ -8,60 +10,32 @@ h1 {
 	font-family: 'Droid Serif', serif;
 }
 
-* {
+div, button {
   border-radius: 0 !important;
 }
 
-.sample .front {
-	background-color: blue;
-}
-
-.sample .back {
-	background-color: teal;
-}
-
-/* Common style for pseudo-elements */
-section::before,
-section::after {
-	position: absolute;
-	content: '';
-	pointer-events: none;
-}
-/* Big triangle with shadow */
-
-#trianglePath1 {
-	fill: #ccc;
-	stroke: #ccc;
-} 
-
-#trianglePath2 {
-	fill: darkGray;
-	stroke: darkGray;
-}
-
-/* Bootstrap row fix */
-
-.row {
+.row { /* Bootstrap row fix */
 	margin: 0;
 	background-color: #ccc;
 }
 
-/* Navbar & navigation */
+/* TurnBlock */
 
-nav {
-	padding-top: 30px;
-}
-.nav {
-	margin-bottom: 45px;
+.turnBlock {
+	cursor: pointer;
+	margin: 5px;
 }
 
-.navbar-brand {
-	font-family: 'Droid Serif', serif;
-	color: white;
-	padding: 9px;
-	font-size: 32px;
-	line-height: 32px;
+.turnBlock .front {
+	background-color: blue;
 }
+
+.turnBlock .back {
+	background-color: teal;
+}
+
+
+/* Logo */
 
 #my-name .char1 {
 	color: #fff;
@@ -74,6 +48,25 @@ nav {
 #my-name .char3 {
 	color: #AFFED7;
 	font-weight: bold;
+}
+
+
+/* Navbar & Navigation Menu */
+
+nav {
+	padding-top: 30px;
+}
+
+.nav {
+	margin-bottom: 45px;
+}
+
+.navbar-brand {
+	font-family: 'Droid Serif', serif;
+	color: white;
+	padding: 9px;
+	font-size: 32px;
+	line-height: 32px;
 }
 
 .navbar li {
@@ -89,13 +82,11 @@ nav {
 	transition: background-color 200ms linear;
 }
 
-/* Show hamburger icon on smaller devices */
 
-.icon-bar {
+
+.icon-bar { /* Show hamburger icon on smaller devices */
 	border: solid 1px #fff;
 }
-
-/* Change navbar item background on hover */
 
 .navbar li.about-link a:hover {
 	background-color: #FFF4B6;
@@ -104,7 +95,7 @@ nav {
 
 .navbar li.work-link a:hover {
 	background-color: #E80C7A;
-	color: white;
+	color: mistyRose;
 }
 
 .navbar li.contact-link a:hover {
@@ -112,36 +103,68 @@ nav {
 	color: navy;
 }
 
-/* grid */
+
+/* Grid Blocks */
+
 .block {
-	height: 250px;
-	background-color: pink;
-	border: solid 5px #ccc;
+	min-height: 250px;
+	background-color: transparent;
+/*	border: solid 5px #ccc;*/
 	text-align: center;
 	line-height: 250px;
 	vertical-align: middle;
 	animation-duration: 500ms;
   	animation-delay: 500ms;
+  	padding: 0px;
 }
 
 .social-block {
-	height: 125px;
-	margin: 0;
+	height: 129px;
 	background-color: pink;
 	border: solid 5px #ccc;
 	animation-duration: 500ms;
   	animation-delay: 500ms;
+  	vertical-align: middle;
+  	line-height: 125px;
+  	text-align: center;
+  	font-size: 32px;
 }
 
 .social-container {
 	padding: 0;
 }
 
-.icon {
-	font-size: 80%;
+/* Block Styling */
+
+#twitter-block {
+	background-color: #AFFED7;
 }
 
-/* Blocks */
+#twitter-block a {
+	color: navy;
+}
+
+#linkedin-block {
+	background-color: darkBlue;
+}
+
+#email-block {
+	background-color: #E80C7A;
+}
+
+#email-block a {
+	color: mistyRose;
+}
+
+#github-block {
+	background-color: #FFF4B6;
+}
+
+#github-block a {
+	color: black;
+}
+
+/* Tag Line */
 
 #tag-line {
 	padding: 5px;
@@ -167,21 +190,15 @@ nav {
 }
 
 
-footer {
-	height: 150px;
-	line-height: 50px;
-	font-size: 12px;
-	background-color: silver;
-	color: #f1f1f1;
-}
-
-.divider {
-	padding: 5px;
-}
+/* Components */
 
 legend {
 	color: white;
 	font-family: 'Droid Serif', serif;
+}
+
+.divider {
+	padding: 5px;
 }
 
 .btn {
@@ -191,16 +208,78 @@ legend {
 	font-size: 14px;
 }
 
+.icon {
+	font-size: 80%;
+}
+
+
+/* Portfolio Filter Controls */
+
+button.filter {
+	background-color: silver;
+	border: none;
+	color: white;
+	font-size: 14px;
+	border-radius: 10px !important;
+	font-weight: 500;
+	outline: none;
+	font-weight: bold;
+	padding: 3px 6px 3px 6px;
+	margin: 1px 0px;
+}
+
+button.filter:hover {
+	background-color: darkGray;
+}
+
+button.filter.active{
+  background: darkGray;
+}
+
+.controls {
+	min-height: 60px;
+}
+
+
+/* Footer */
+
+footer {
+	height: 150px;
+	line-height: 50px;
+	font-size: 12px;
+	background-color: silver;
+	color: #f1f1f1;
+}
+
 .footer {
 	height: 100px;
 	background-color: silver;
 }
 
-/* Mix it up */
+section::before,
+section::after { /* Common style for pseudo-elements */
+	position: absolute;
+	content: '';
+	pointer-events: none;
+}
 
-#Container .mix{
+#trianglePath1 { /* Big triangle with shadow */
+	fill: #ccc;
+	stroke: #ccc;
+} 
+
+#trianglePath2 {
+	fill: darkGray;
+	stroke: darkGray;
+}
+
+
+/* Mix It Up */
+
+#Container .mix {
 	display: none;
 }
+
 
 /* Typed JS cursor */
 
@@ -210,16 +289,19 @@ legend {
     -moz-animation: blink 1s infinite;
     animation: blink 1s infinite;
 }
+
 @keyframes blink{
     0% { opacity:1; }
     50% { opacity:0; }
     100% { opacity:1; }
 }
+
 @-webkit-keyframes blink{
     0% { opacity:1; }
     50% { opacity:0; }
     100% { opacity:1; }
 }
+
 @-moz-keyframes blink{
     0% { opacity:1; }
     50% { opacity:0; }
