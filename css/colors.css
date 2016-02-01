@@ -1,0 +1,76 @@
+/* Logo */
+
+#my-name .char1 {
+	color: #fff;
+}
+
+#my-name .char2 {
+	color: #fff;
+}
+
+#my-name .char3 {
+	color: #AFFED7;
+	font-weight: bold;
+}
+
+
+/* Tag Line */
+
+.hello {
+	color: white;
+}
+
+.julie {
+	color: mistyRose;
+}
+
+.seattle {
+	color: #FFF4B6;
+}
+
+
+/* Block Styling */
+
+#twitter-block {
+	background-color: #AFFED7;
+}
+
+#twitter-block a {
+	color: navy;
+}
+
+#linkedin-block {
+	background-color: darkBlue;
+}
+
+#email-block {
+	background-color: #E80C7A;
+}
+
+#email-block a {
+	color: mistyRose;
+}
+
+#github-block {
+	background-color: #FFF4B6;
+}
+
+#github-block a {
+	color: black;
+}
+
+#compactia-block .front {
+	background-color: white;
+}
+
+#compactia-block .back {
+	background-color: darkGray;
+}
+
+#explor-block .front {
+	background-color: #FFF4B6;
+}
+
+#explor-block .back {
+	background-color: navy;
+}

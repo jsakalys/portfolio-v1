@@ -19,37 +19,6 @@ div, button {
 	background-color: #ccc;
 }
 
-/* TurnBlock */
-
-.turnBlock {
-	cursor: pointer;
-	margin: 5px;
-}
-
-.turnBlock .front {
-	background-color: blue;
-}
-
-.turnBlock .back {
-	background-color: teal;
-}
-
-
-/* Logo */
-
-#my-name .char1 {
-	color: #fff;
-}
-
-#my-name .char2 {
-	color: #fff;
-}
-
-#my-name .char3 {
-	color: #AFFED7;
-	font-weight: bold;
-}
-
 
 /* Navbar & Navigation Menu */
 
@@ -82,8 +51,6 @@ nav {
 	transition: background-color 200ms linear;
 }
 
-
-
 .icon-bar { /* Show hamburger icon on smaller devices */
 	border: solid 1px #fff;
 }
@@ -111,58 +78,41 @@ nav {
 	background-color: transparent;
 /*	border: solid 5px #ccc;*/
 	text-align: center;
-	line-height: 250px;
-	vertical-align: middle;
+  	padding: 0px;
 	animation-duration: 500ms;
   	animation-delay: 500ms;
-  	padding: 0px;
+}
+
+.icon-block {
+	position: relative;
+  	top: 50%;
+  	transform: translateY(-50%);
 }
 
 .social-block {
 	height: 129px;
-	background-color: pink;
+	background-color: mistyRose;
 	border: solid 5px #ccc;
-	animation-duration: 500ms;
-  	animation-delay: 500ms;
   	vertical-align: middle;
   	line-height: 125px;
   	text-align: center;
   	font-size: 32px;
+	animation-duration: 500ms;
+  	animation-delay: 500ms;
 }
 
 .social-container {
 	padding: 0;
 }
 
-/* Block Styling */
 
-#twitter-block {
-	background-color: #AFFED7;
+/* TurnBlock */
+
+.turnBlock {
+	cursor: pointer;
+	margin: 5px;
 }
 
-#twitter-block a {
-	color: navy;
-}
-
-#linkedin-block {
-	background-color: darkBlue;
-}
-
-#email-block {
-	background-color: #E80C7A;
-}
-
-#email-block a {
-	color: mistyRose;
-}
-
-#github-block {
-	background-color: #FFF4B6;
-}
-
-#github-block a {
-	color: black;
-}
 
 /* Tag Line */
 
@@ -175,18 +125,6 @@ nav {
 	text-align: left;
 	font-family: 'Droid Serif', serif;
 	min-height: 250px;
-}
-
-.hello {
-	color: white;
-}
-
-.julie {
-	color: lightPink;
-}
-
-.seattle {
-	color: #FFF4B6;
 }
 
 
@@ -209,7 +147,13 @@ legend {
 }
 
 .icon {
-	font-size: 80%;
+	width: 64px;
+	height: 64px;
+}
+
+.icon-label {
+	font-size: 18px;
+	padding-top: 15px;
 }
 
 
