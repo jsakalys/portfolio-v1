@@ -19,8 +19,35 @@ div, button {
 	background-color: #ccc;
 }
 
+svg path {
+    fill: currentColor;
+}
+
+a:hover {
+	opacity: .75 !important;
+}
+
+a {
+	color: white;
+	font-weight: bold;
+}
+
+a:hover {
+	color: #6D3078;
+	font-weight: bold;
+	text-decoration: none;
+}
+
 
 /* Navbar & Navigation Menu */
+
+a#my-name {
+	font-weight: normal;
+}
+
+a#my-name: hover {
+	font-weight: normal;
+}
 
 nav {
 	padding-top: 30px;
@@ -48,6 +75,7 @@ nav {
 
 .navbar li a {
 	color: black;
+	font-weight: normal;
 	transition: background-color 200ms linear;
 }
 
@@ -57,16 +85,19 @@ nav {
 
 .navbar li.about-link a:hover {
 	background-color: #FFF4B6;
+	font-weight: normal;
 	color: black;
 }
 
 .navbar li.work-link a:hover {
 	background-color: #E80C7A;
+	font-weight: normal;
 	color: mistyRose;
 }
 
 .navbar li.contact-link a:hover {
 	background-color: #AFFED7;
+	font-weight: normal; 
 	color: navy;
 }
 
@@ -157,6 +188,7 @@ blockquote footer {
 legend {
 	color: white;
 	font-family: 'Droid Serif', serif;
+	margin: 15px 0px 45px 0px;
 }
 
 .divider {
@@ -168,6 +200,10 @@ legend {
 	letter-spacing: 1px;
 	border-bottom: solid 1px darkGray;
 	font-size: 14px;
+}
+
+.btn:hover {
+	color: #FFF4B6;
 }
 
 .icon {
@@ -182,35 +218,53 @@ legend {
 	vertical-align: bottom;
 	padding-top: 15px;
 	line-height: 64px;
-	color: black;
 }
 
+#submit-button {
+	margin-top: 30px;
+}
 
 /* Portfolio Filter Controls */
 
 button.filter {
-	background-color: silver;
+	background-color: darkGray;
 	border: none;
 	color: white;
 	font-size: 14px;
-	border-radius: 10px !important;
-	font-weight: 500;
-	outline: none;
 	font-weight: bold;
+	border-radius: 10px !important;
+	outline: none;
 	padding: 3px 6px 3px 6px;
 	margin: 1px 0px;
 }
 
 button.filter:hover {
-	background-color: darkGray;
+	background-color: #6D3078;
 }
 
 button.filter.active{
-  background: darkGray;
+  background: #E80C7A;
 }
 
 .controls {
 	min-height: 60px;
+	margin-bottom: 15px;
+}
+
+.form-label {
+	text-transform: uppercase;
+	font-family: 'Istok Web', sans-serif;
+	letter-spacing: 2px;
+	font-size: 12px;
+	font-weight: normal;
+}
+
+/* Portfolio Project Stuff */
+
+.project-desc {
+	padding: 30px;
+	font-size: 18px;
+	text-align: justify;
 }
 
 
@@ -228,6 +282,7 @@ button.filter.active{
 	height: 100px;
 	background-color: silver;
 }
+
 
 section::before,
 section::after { /* Common style for pseudo-elements */

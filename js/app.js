@@ -14,6 +14,10 @@ jsApp.config(['$routeProvider', '$locationProvider', function($routeProvider, $l
   	templateUrl: 'views/portfolio.html',
   	controller: 'PortfolioCtrl'
   })
+  .when('/contact', {
+    templateUrl: 'views/contact.html',
+    //controller: 'ContactCtrl'
+  })
   .otherwise({
     templateUrl: 'views/404.html'
   });
