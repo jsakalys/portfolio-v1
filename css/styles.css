@@ -105,12 +105,36 @@ nav {
 	padding: 0;
 }
 
+#reference-block {
+	text-align: center;
+}
+
+.quote {
+	font-family: 'Droid Serif', serif;
+	display: inline-block;
+	padding: 30px;
+	position: relative;
+  	top: 50%;
+  	font-style: italic;
+  	transform: translateY(-50%);
+}
+
+blockquote footer {
+	font-family: 'Istok Web', sans-serif;
+	font-style: normal;
+}
 
 /* TurnBlock */
 
 .turnBlock {
 	cursor: pointer;
 	margin: 5px;
+}
+
+.turnBoxButton {
+	-webkit-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
+	transform-style: preserve-3d;
 }
 
 
@@ -149,11 +173,16 @@ legend {
 .icon {
 	width: 64px;
 	height: 64px;
+	display: inline-block;
 }
 
 .icon-label {
-	font-size: 18px;
+	display: inline-block;
+	font-size: 32px;
+	vertical-align: bottom;
 	padding-top: 15px;
+	line-height: 64px;
+	color: black;
 }
 
 
@@ -187,7 +216,7 @@ button.filter.active{
 
 /* Footer */
 
-footer {
+.footer2 {
 	height: 150px;
 	line-height: 50px;
 	font-size: 12px;

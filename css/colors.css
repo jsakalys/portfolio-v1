@@ -74,3 +74,11 @@
 #explor-block .back {
 	background-color: navy;
 }
+
+#reference-block .front {
+	background-color: silver;
+}
+
+#reference-block .back {
+	background-color: mistyRose;
+}
