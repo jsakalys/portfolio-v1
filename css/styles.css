@@ -382,3 +382,22 @@ section::after { /* Common style for pseudo-elements */
     50% { opacity:0; }
     100% { opacity:1; }
 }
+
+
+/* Landscape phones and down */
+
+@media (max-width: 767px) {
+
+	blockquote p {
+		font-size: 14px;
+	}
+
+	.project-desc {
+		font-size: 14px;
+	}
+
+	.project-desc h3 {
+		font-size: 18px;
+	}
+
+}
