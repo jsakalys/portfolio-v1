@@ -97,7 +97,8 @@ jsApp.controller('PortfolioCtrl', function(){
 	        }, 'xml');
 
     	});
-
+		$('.divider').addClass('animated fadeInUp');
+		$('.controls').addClass('animated fadeIn');
 		$('.turnBlock').turnBox(turnBoxOptions);
 		$('#my-name').lettering();
   		$('#Container').mixItUp();
@@ -114,4 +115,23 @@ jsApp.controller('PortfolioCtrl', function(){
 		};
 		$('.turnBlock').turnBox(turnBoxOptions);
 	});
+});
+
+jsApp.controller('AboutCtrl', function(){
+	$(document).ready(function(){
+		$('#my-name').lettering();
+		$('#tag-title, #tag-text, #sub-text').addClass('animated fadeIn');
+		$('.divider').addClass('animated fadeInUp');
+		$('.dev-image').addClass('animated slideInLeft');
+		$('.skills').addClass('fadeIn');
+	});	
+});
+
+jsApp.controller('ContactCtrl', function(){
+	$(document).ready(function(){
+		$('#my-name').lettering();
+		$('.divider').addClass('animated fadeInUp');
+		$('form').addClass('animated fadeIn');
+		$('#contact-details').addClass('animated slideInRight');
+	});	
 });

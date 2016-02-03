@@ -21,6 +21,10 @@
 }
 
 .julie {
+	color: #E80C7A;
+}
+
+.heart {
 	color: mistyRose;
 }
 
@@ -68,11 +72,11 @@ hr {
 }
 
 #compactia-block-main .front {
-	background-color: white;
+	background-color: darkGray;
 }
 
 #compactia-block-main .back {
-	background-color: darkGray;
+	background-color: white;
 }
 
 #explor-block-main .front {
@@ -103,8 +107,8 @@ hr {
 }
 
 #clowder-block .front {
-	background-color: #6D3078;
-	color: silver;
+	background-color: silver;
+	color: #6D3078;
 }
 
 #clowder-block .back {
@@ -130,10 +134,20 @@ hr {
 }
 
 #compactia-block .front {
-	background-color: darkGray;
+	background-color: white;
+	color: black;
 }
 
 #compactia-block .back {
+	background-color: white;
+}
+
+#twitch-block .front {
+	background-color: #6D3078;
+	color: white;
+}
+
+#twitch-block .back {
 	background-color: white;
 }
 
@@ -148,6 +162,7 @@ hr {
 
 #sortit-block .front {
 	background-color: #FFF4B6;
+	color: #428BCA;
 }
 
 #sortit-block .back {
@@ -155,8 +170,8 @@ hr {
 }
 
 #embaussed-block .front {
-	background-color: mistyRose;
-	color: darkGray;
+	background-color: #5bc0de;
+	color: #AFFED7;
 }
 
 #embaussed-block .back {
@@ -164,17 +179,21 @@ hr {
 }
 
 #reference-block .front {
-	background-color: silver;
+	background-color: white;
 }
 
 #reference-block .back {
-	background-color: mistyRose;
+	background-color: silver;
 }
 
 /* Typography */
 
-#tag-text {
+#tag-title {
 	color: #E80C7A;
+}
+
+#tag-text {
+	color: black;
 }
 
 #sub-text {

@@ -8,7 +8,8 @@ jsApp.config(['$routeProvider', '$locationProvider', function($routeProvider, $l
     controller: 'HomeCtrl'
   })
   .when('/about', {
-    templateUrl: 'views/about.html'
+    templateUrl: 'views/about.html',
+    controller: 'AboutCtrl'
   })
   .when('/portfolio', {
   	templateUrl: 'views/portfolio.html',
@@ -16,7 +17,7 @@ jsApp.config(['$routeProvider', '$locationProvider', function($routeProvider, $l
   })
   .when('/contact', {
     templateUrl: 'views/contact.html',
-    //controller: 'ContactCtrl'
+    controller: 'ContactCtrl'
   })
   .otherwise({
     templateUrl: 'views/404.html'

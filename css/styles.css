@@ -19,6 +19,16 @@ div, button {
 	background-color: #ccc;
 }
 
+ul {
+	padding: 0;
+	display: inline-block;
+	list-style: none;
+}
+
+ul i {
+	margin-right: 10px;
+}
+
 svg path {
     fill: currentColor;
 }
@@ -162,6 +172,10 @@ blockquote footer {
 	margin: 5px;
 }
 
+.turnBlock a {
+	color: black;
+}
+
 .turnBoxButton {
 	-webkit-transform-style: preserve-3d;
 	-moz-transform-style: preserve-3d;
@@ -182,6 +196,16 @@ blockquote footer {
 	min-height: 250px;
 }
 
+#tag-text {
+	color: black;
+	font-family: 'Istok Web', sans-serif;
+	line-height: 36px;
+}
+
+#sub-text {
+	margin-top: 80px;
+}
+
 
 /* Components */
 
@@ -200,10 +224,24 @@ legend {
 	letter-spacing: 1px;
 	border-bottom: solid 1px darkGray;
 	font-size: 14px;
+	color: white;
 }
 
 .btn:hover {
-	color: #FFF4B6;
+	color: white;
+}
+
+.btn:focus,.btn:active:focus,.btn.active:focus,
+.btn.focus,.btn:active.focus,.btn.active.focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.btn-info {
+	border-top: 0px;
+	border-left: 0px;
+	border-right: 0px;
+	border-bottom: solid 1px #46b8da;
 }
 
 .icon {
@@ -218,6 +256,23 @@ legend {
 	vertical-align: bottom;
 	padding-top: 15px;
 	line-height: 64px;
+}
+
+
+/* Form */
+
+.form-control:focus {   
+	border-color: #E80C7A;
+	box-shadow: none;
+	outline: 0 none;
+}
+
+.form-label {
+	text-transform: uppercase;
+	font-family: 'Istok Web', sans-serif;
+	letter-spacing: 2px;
+	font-size: 12px;
+	font-weight: normal;
 }
 
 #submit-button {
@@ -249,14 +304,6 @@ button.filter.active{
 .controls {
 	min-height: 60px;
 	margin-bottom: 15px;
-}
-
-.form-label {
-	text-transform: uppercase;
-	font-family: 'Istok Web', sans-serif;
-	letter-spacing: 2px;
-	font-size: 12px;
-	font-weight: normal;
 }
 
 /* Portfolio Project Stuff */
