@@ -63,6 +63,10 @@ nav {
 	padding-top: 30px;
 }
 
+nav ul {
+	display: block;
+}
+
 .nav {
 	margin-bottom: 45px;
 }
