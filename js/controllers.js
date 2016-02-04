@@ -1,4 +1,4 @@
-jsApp.controller('HomeCtrl', function(){
+jsApp.controller('HomeCtrl', function($scope){
 	var turnBoxOptions = {
 	  width: $('this').width(),
 	  height: 250,

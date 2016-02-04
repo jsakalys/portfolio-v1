@@ -393,15 +393,15 @@ section::after { /* Common style for pseudo-elements */
 @media (max-width: 767px) {
 
 	blockquote p {
-		font-size: 14px;
+		font-size: 12px;
 	}
 
 	.project-desc {
-		font-size: 14px;
+		font-size: 12px;
 	}
 
 	.project-desc h3 {
-		font-size: 18px;
+		font-size: 16px;
 	}
 
 }
