@@ -56,7 +56,7 @@ jsApp.controller('HomeCtrl', function($scope){
 	});
 });
 
-jsApp.controller('PortfolioCtrl', function(){
+jsApp.controller('PortfolioCtrl', function($scope){
 	var turnBoxOptions = {
 	  width: $('this').width(),
 	  height: $('this').height(),
@@ -68,6 +68,8 @@ jsApp.controller('PortfolioCtrl', function(){
 	  direction: "negative",
 	  type: "real"
 	};
+	$scope.drawings = $('.mix');
+	console.log($scope.drawings)
 	$(document).ready(function(){
 		jQuery('img[src$=".svg"]').each(function(){
 	        var $img = jQuery(this);
