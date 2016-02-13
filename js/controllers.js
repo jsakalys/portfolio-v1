@@ -56,7 +56,7 @@ jsApp.controller('HomeCtrl', function($scope){
 	});
 });
 
-jsApp.controller('PortfolioCtrl', function(){
+jsApp.controller('PortfolioCtrl', function($scope, $route){
 	var turnBoxOptions = {
 	  width: $('this').width(),
 	  height: $('this').height(),
@@ -101,7 +101,7 @@ jsApp.controller('PortfolioCtrl', function(){
 		$('.controls').addClass('animated fadeIn');
 		$('.turnBlock').turnBox(turnBoxOptions);
 		$('#my-name').lettering();
-  		$('#Container').mixItUp();
+  		//$('#Container').mixItUp();
   		var turnBoxOptions = {
 		  width: $('this').width(),
 		  height: 250,
@@ -124,7 +124,7 @@ jsApp.controller('AboutCtrl', function(){
 		$('.divider').addClass('animated fadeInUp');
 		$('.dev-image').addClass('animated slideInLeft');
 		$('.skills').addClass('fadeIn');
-	});	
+	});
 });
 
 jsApp.controller('ContactCtrl', function(){

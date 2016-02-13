@@ -177,7 +177,8 @@ blockquote footer {
 }
 
 .turnBlock a {
-	color: black;
+	color: #E80C7A;
+	font-weight: normal;
 }
 
 .turnBoxButton {
@@ -397,11 +398,11 @@ section::after { /* Common style for pseudo-elements */
 	}
 
 	.project-desc {
-		font-size: 12px;
+		font-size: 14px;
 	}
 
 	.project-desc h3 {
-		font-size: 16px;
+		font-size: 18px;
 	}
 
 }

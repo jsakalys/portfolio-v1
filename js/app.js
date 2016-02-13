@@ -1,4 +1,4 @@
-var jsApp = angular.module('jsApp', ['ngRoute', 'navBar', 'footerBar']);
+var jsApp = angular.module('jsApp', ['ngRoute', 'navBar', 'footerBar', 'mixItUp']);
 
 jsApp.config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider) {
   //define routes
